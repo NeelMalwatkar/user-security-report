@@ -4,12 +4,21 @@ function App() {
   const [users, setUsers] = useState([]);
   const [filterMFA, setFilterMFA] = useState("all");
 
-  useEffect(() => {
-    fetch("/api/users")
-      .then((res) => res.json())
-      .then(setUsers)
-      .catch(console.error);
-  }, []);
+useEffect(() => {
+  const baseURL =
+  process.env.NODE_ENV === "development"
+    ? ""
+    : process.env.PUBLIC_URL || "";
+  const url =
+    process.env.NODE_ENV === "development"
+      ? `${baseURL}/api/users`
+      : `${baseURL}/data.json`;
+
+  fetch(url)
+    .then((res) => res.json())
+    .then(setUsers)
+    .catch(console.error);
+}, []);
 
   const filteredUsers = users.filter((u) => {
     if (filterMFA === "true") return u.mfa_enabled === true;
