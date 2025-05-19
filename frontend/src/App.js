@@ -5,14 +5,11 @@ function App() {
   const [filterMFA, setFilterMFA] = useState("all");
 
 useEffect(() => {
-  const baseURL =
-  process.env.NODE_ENV === "development"
-    ? ""
-    : process.env.PUBLIC_URL || "";
-  const url =
-    process.env.NODE_ENV === "development"
-      ? `${baseURL}/api/users`
-      : `${baseURL}/data.json`;
+  const isDev = process.env.NODE_ENV === "development";
+
+  const url = isDev
+      ? `/api/users`
+      : `/userdata.json`; // fetch the data from public folder if backend not live (only in case of GitHub Pages)
 
   fetch(url)
     .then((res) => res.json())
