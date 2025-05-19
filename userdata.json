@@ -27,6 +27,15 @@
     "days_since_last_access": 96
   },
   {
+    "name": "Damn",
+    "create_date": "May 18 2025",
+    "password_changed_date": "May 18 2025",
+    "last_access_date": "May 18 2025",
+    "mfa_enabled": true,
+    "days_since_password_change": 1,
+    "days_since_last_access": 1
+  },
+  {
     "name": "Foo3 Bar3",
     "create_date": "Mar 7 2023",
     "password_changed_date": "Mar 10 2023",
@@ -43,14 +52,5 @@
     "mfa_enabled": false,
     "days_since_password_change": 1863,
     "days_since_last_access": 958
-  },
-  {
-    "name": "Damn",
-    "create_date": "May 18 2025",
-    "password_changed_date": "May 18 2025",
-    "last_access_date": "May 18 2025",
-    "mfa_enabled": true,
-    "days_since_password_change": 1,
-    "days_since_last_access": 1
   }
 ]
