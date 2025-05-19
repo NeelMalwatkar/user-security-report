@@ -6,10 +6,9 @@ function App() {
 
 useEffect(() => {
   const isDev = process.env.NODE_ENV === "development";
-
-  const url = isDev
-      ? `/api/users`
-      : `/userdata.json`; // fetch the data from public folder if backend not live (only in case of GitHub Pages)
+const url = isDev
+  ? "/api/users"
+  : `${process.env.PUBLIC_URL}/userdata.json`; // fetch the data from public folder if backend not live (only in case of GitHub Pages)
 
   fetch(url)
     .then((res) => res.json())
