@@ -1,0 +1,7 @@
+name,create_date,password_changed_date,last_access_date,mfa_enabled
+Foo Bar1,Oct 1 2020,Oct 1 2021,Jan 4 2025,true
+Foo1 Bar1,Sep 20 2019,Sep 22 2019,Feb 8 2025,false
+Foo2 Bar2,Feb 3 2022,Feb 3 2022,Feb 12 2025,false
+Foo3 Bar3,Mar 7 2023,Mar 10 2023,Jan 3 2022,true
+Foo Bar4,Apr 8 2018,Apr 12 2020,Oct 4 2022,false
+Damn,May 18 2025,May 18 2025,May 18 2025,true
