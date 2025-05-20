@@ -5,6 +5,7 @@
   "homepage": "https://neelmalwatkar.github.io/user-security-report",
   "proxy": "http://localhost:8080",
   "dependencies": {
+    "@tanstack/react-table": "^8.21.3",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -21,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

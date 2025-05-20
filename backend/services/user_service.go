@@ -10,7 +10,7 @@ import (
 )
 
 func parseDate(s string) (time.Time, error) {
-	layout := "Jan 2 2006"
+	layout := "01/02/2006"
 	return time.Parse(layout, s)
 }
 

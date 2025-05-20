@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen, fireEvent } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("renders filter dropdown", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText("Filter by MFA:")).toBeInTheDocument();
 });
